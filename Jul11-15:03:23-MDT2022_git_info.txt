@@ -1,0 +1,75 @@
+commit 60d8c1773d25c152d01fc172dcd750f47cabdba4
+Author: jhyan <jhyan@cs.utah.edu>
+Date:   Mon Jul 11 15:02:14 2022 -0600
+
+    Jul11-14:59:38-MDT2022
+
+diff --git a/slurm-4924207.out b/slurm-4924207.out
+index 2d3146b..2b61c10 100644
+--- a/slurm-4924207.out
++++ b/slurm-4924207.out
+@@ -858,3 +858,40 @@ Other Failures:
+   <NO_OTHER_FAILURES>
+ ***************************************
+ 
++[master 4dd2fe7] Jul11-14:59:38-MDT2022
++ 31 files changed, 2648 insertions(+), 44 deletions(-)
++ create mode 100644 GNN-RDM/genacc_cag.sh
++ create mode 100644 GNN-RDM/src/run_full_dgl.sh
++ delete mode 100644 arctic25_adj_part_rk0
++ delete mode 100644 arctic25_adj_part_rk1
++ create mode 100755 batch.sh
++ create mode 100644 dgl/__pycache__/config.cpython-37.pyc
++ create mode 100644 dgl/__pycache__/modules.cpython-37.pyc
++ create mode 100644 dgl/__pycache__/sampler.cpython-37.pyc
++ create mode 100644 dgl/__pycache__/utils.cpython-37.pyc
++ create mode 100644 dgl/log/arctic25/test/loggings
++ create mode 100644 dgl/log/meta/test/loggings
++ create mode 100644 dgl/log/ogbn-arxiv/test/loggings
++ create mode 100644 dgl/log/ogbn-products/test/loggings
++ create mode 100644 dgl/log/oral/test/loggings
++ create mode 100644 dgl/test
++ create mode 100644 dgl/train_full_load.py
++ rename notch347_full_acc.csv => full_acc.csv (100%)
++ delete mode 100644 meta_adj_part_rk0
++ delete mode 100644 meta_adj_part_rk1
++ delete mode 100644 ogbn-arxiv_adj_part_rk0
++ delete mode 100644 ogbn-arxiv_adj_part_rk1
++ delete mode 100644 oral_adj_part_rk0
++ delete mode 100644 oral_adj_part_rk1
++ create mode 100644 slurm-4924207.out
++ create mode 100755 ssn.bat
++remote: error: Trace: ab33bf4c2e15a48bf9a092864fcbd4fd7dc4ddcd9c56c64b496f995b751b7892        
++remote: error: See http://git.io/iEPt8g for more information.        
++remote: error: File oral_adj_part_rk0 is 414.56 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File arctic25_adj_part_rk0 is 880.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File meta_adj_part_rk0 is 994.57 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
++To github.com:JoseYan/GNNs.git
++ ! [remote rejected] master -> master (pre-receive hook declined)
++error: failed to push some refs to 'github.com:JoseYan/GNNs.git'
++run.sh: line 28: pushd: ../GNN_logs: No such file or directory
+diff --git a/slurm-4924207.out b/slurm-4924207.out
+index 2b61c10..bbbff55 100644
+--- a/slurm-4924207.out
++++ b/slurm-4924207.out
+@@ -895,3 +895,19 @@ To github.com:JoseYan/GNNs.git
+  ! [remote rejected] master -> master (pre-receive hook declined)
+ error: failed to push some refs to 'github.com:JoseYan/GNNs.git'
+ run.sh: line 28: pushd: ../GNN_logs: No such file or directory
++[master 60d8c17] Jul11-14:59:38-MDT2022
++ 1 file changed, 37 insertions(+)
++remote: error: Trace: 585a3e49a028e8015012908483ec5eea359205c1782897657234cfc28efb4529        
++remote: error: See http://git.io/iEPt8g for more information.        
++remote: error: File oral_adj_part_rk0 is 414.56 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File arctic25_adj_part_rk0 is 880.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File meta_adj_part_rk0 is 994.57 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
++To github.com:JoseYan/GNNs.git
++ ! [remote rejected] master -> master (pre-receive hook declined)
++error: failed to push some refs to 'github.com:JoseYan/GNNs.git'
++run.sh: line 32: popd: directory stack empty
+++ sh run.sh sh GNN-RDM/genacc_cag.sh
++Date:  Jul11-15:03:23-MDT2022
++/uufs/chpc.utah.edu/common/home/u1320844/GNNs_log/Jul11-15:03:23-MDT2022_env_info.txt
++/uufs/chpc.utah.edu/common/home/u1320844/GNNs_log/Jul11-15:03:23-MDT2022_running_log.txt

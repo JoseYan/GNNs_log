@@ -1,0 +1,5 @@
+Namespace(acc_csv='full.csv', accperrank=1, accuracy='True', activations='True', csv='', download=None, epochs=2000, graphname='ogbn-products', local_rank=None, midlayer=128, normalization='True', runcount=1, timing='True')
+Arguments: epochs: 2000 graph: ogbn-products timing: True mid: 128 norm: True act: True acc: True runs: 1
+notch347
+Processes: 1
+device: cuda:0

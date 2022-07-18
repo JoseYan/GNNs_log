@@ -1,0 +1,50 @@
+commit 846d33a6b31953acbc2994483e5269cdb4a8b727
+Author: jhyan <jhyan@cs.utah.edu>
+Date:   Tue Jul 12 04:55:30 2022 -0600
+
+    Jul12-02:27:13-MDT2022
+
+diff --git a/slurm-4924845.out b/slurm-4924845.out
+index 0407d9a..f9e3b40 100644
+--- a/slurm-4924845.out
++++ b/slurm-4924845.out
+@@ -72918,3 +72918,15 @@ Other Failures:
+   msg: "Process failed with exitcode 1"
+ ***************************************
+ 
++[master 29708c4] Jul12-02:27:13-MDT2022
++ 6 files changed, 25176 insertions(+), 3 deletions(-)
++remote: error: Trace: a6224616fd909bff5e2e7242291eafbbd989e6829d6af2e1c0cfc438578d5421        
++remote: error: See http://git.io/iEPt8g for more information.        
++remote: error: File meta_adj_part_rk0 is 994.57 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File oral_adj_part_rk0 is 414.56 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File arctic25_adj_part_rk0 is 880.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
++To github.com:JoseYan/GNNs.git
++ ! [remote rejected] master -> master (pre-receive hook declined)
++error: failed to push some refs to 'github.com:JoseYan/GNNs.git'
++run.sh: line 28: pushd: ../GNN_logs: No such file or directory
+diff --git a/slurm-4924845.out b/slurm-4924845.out
+index f9e3b40..cc6a55a 100644
+--- a/slurm-4924845.out
++++ b/slurm-4924845.out
+@@ -72930,3 +72930,19 @@ To github.com:JoseYan/GNNs.git
+  ! [remote rejected] master -> master (pre-receive hook declined)
+ error: failed to push some refs to 'github.com:JoseYan/GNNs.git'
+ run.sh: line 28: pushd: ../GNN_logs: No such file or directory
++[master 846d33a] Jul12-02:27:13-MDT2022
++ 1 file changed, 12 insertions(+)
++remote: error: Trace: 4ca5724965bf1add8835479802079154a1c28add52354cc798f3b0311b4cc22a        
++remote: error: See http://git.io/iEPt8g for more information.        
++remote: error: File oral_adj_part_rk0 is 414.56 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File arctic25_adj_part_rk0 is 880.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: File meta_adj_part_rk0 is 994.57 MB; this exceeds GitHub's file size limit of 100.00 MB        
++remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
++To github.com:JoseYan/GNNs.git
++ ! [remote rejected] master -> master (pre-receive hook declined)
++error: failed to push some refs to 'github.com:JoseYan/GNNs.git'
++run.sh: line 32: popd: directory stack empty
+++ sh run.sh sh GNN-RDM/genacc_rdm.sh
++Date:  Jul12-04:56:39-MDT2022
++/uufs/chpc.utah.edu/common/home/u1320844/GNNs_log/Jul12-04:56:39-MDT2022_env_info.txt
++/uufs/chpc.utah.edu/common/home/u1320844/GNNs_log/Jul12-04:56:39-MDT2022_running_log.txt

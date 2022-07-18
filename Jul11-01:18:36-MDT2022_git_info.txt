@@ -1,0 +1,82 @@
+diff --git a/GNN-RDM/genacc_rdm.sh b/GNN-RDM/genacc_rdm.sh
+index 3e18d4a..7e84326 100644
+--- a/GNN-RDM/genacc_rdm.sh
++++ b/GNN-RDM/genacc_rdm.sh
+@@ -1,5 +1,5 @@
+-#for data in ogbn-arxiv Reddit ogbn-products meta arctic25 oral
+-for data in arctic25 oral 
++for data in ogbn-products ogbn-arxiv Reddit meta arctic25 oral
++#for data in arctic25 oral 
+ do
+     for ngpu in 2
+     do
+@@ -7,7 +7,7 @@ do
+         do
+             for mmorder in sdsd
+             do
+-                python -m torch.distributed.run --nproc_per_node=$ngpu --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --master_port=12394 src/gcn_distr_transpose_15d.py --accperrank=$ngpu --epochs=2000 --graphname=$data --mmorder=$mmorder --timing=True --midlayer=$hidden --runcount=1 --activations=True  --replication=1 --accuracy=True --normalization=True
++                python -m torch.distributed.run --nproc_per_node=$ngpu --nnodes=1 --node_rank=0 --master_addr=127.0.0.1 --master_port=12394 GNN-RDM/src/gcn_distr_transpose_15d.py --accperrank=$ngpu --epochs=2000 --graphname=$data --mmorder=$mmorder --timing=True --midlayer=$hidden --runcount=1 --activations=True  --replication=1 --accuracy=True --normalization=True
+             done
+         done
+    done
+diff --git a/GNN-RDM/src/gcn_distr_transpose_15d.py b/GNN-RDM/src/gcn_distr_transpose_15d.py
+index a9342ac..14fb447 100644
+--- a/GNN-RDM/src/gcn_distr_transpose_15d.py
++++ b/GNN-RDM/src/gcn_distr_transpose_15d.py
+@@ -716,7 +716,7 @@ def split_coo(adj_matrix, node_count, n_per_proc, dim):
+     return am_partitions, vtx_indices
+ 
+ # Normalize all elements according to KW's normalization rule
+-def scale_elements(adj_matrix, adj_part, node_count, row_vtx, col_vtx):
++def scale_elements(adj_matrix, adj_part, node_count, row_vtx, col_vtx, rank=None, save=False):
+     if not normalization:
+         return adj_part
+ 
+@@ -775,6 +775,9 @@ def scale_elements(adj_matrix, adj_part, node_count, row_vtx, col_vtx):
+                                                 size=(adj_part.size(0), adj_part.size(1)),
+                                                 requires_grad=False, device=torch.device("cpu"))
+ 
++    if save:
++        torch.save(adj_part, f"{graphname}_adj_part_rk{rank}")
++
+     return adj_part
+ 
+ def symmetric(adj_matrix):
+@@ -872,7 +875,7 @@ def oned_partition(rank, size, inputs, adj_matrix, data, features, classes, devi
+                                                 torch.ones(am_partitions[row_id].size(1)), 
+                                                 size=(proc_node_count, node_count), 
+                                                 requires_grad=False)
+-        am_partitions[row_id] = scale_elements(adj_matrix, am_partitions[row_id], node_count,  vtx_indices[row_id], 0)
++        am_partitions[row_id] = scale_elements(adj_matrix, am_partitions[row_id], node_count,  vtx_indices[row_id], 0, rank=rank,save=True)
+         
+         # First split inputs into multiple row panels
+         inputs_row = torch.split(inputs, math.ceil(float(inputs.size(0)) / replication), dim=0)
+diff --git a/run.sh b/run.sh
+index 5f19ea2..a8a0dd1 100644
+--- a/run.sh
++++ b/run.sh
+@@ -1,6 +1,5 @@
+-pref="/uufs/chpc.utah.edu/common/home/u1320844/GNN_logs/"
++pref="/uufs/chpc.utah.edu/common/home/u1320844/GNNs_log/"
+ dt=$(date | awk '{print$2$3"-"$4"-"$5$6}')
+-
+ echo "Date: " $dt
+ 
+ git_output=$pref$dt"_git_info.txt"
+@@ -15,8 +14,14 @@ git diff > $git_output
+ env > $env_output
+ pip list > $env_output
+ 
+-cmd=$1
+-echo $cmd
++cmd=""
++for i in $*
++do
++    cmd="$cmd $i"
++done
++echo $cmd >> $env_output
++$cmd | tee $prog_output
++
+ git add .
+ git commit -m $dt
+ git push origin master

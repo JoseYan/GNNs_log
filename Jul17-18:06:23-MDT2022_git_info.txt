@@ -1,0 +1,45 @@
+commit 8a4335ef34706e62026b7b6cb85ddbd326e38218
+Author: jhyan <jhyan@cs.utah.edu>
+Date:   Sun Jul 17 18:06:01 2022 -0600
+
+    Jul17-18:05:55-MDT2022
+
+diff --git a/batch.sh b/batch.sh
+index 0debb22..67e77b0 100755
+--- a/batch.sh
++++ b/batch.sh
+@@ -23,5 +23,6 @@ conda activate ogb
+ module load gcc/9.2.0
+ module load cuda/11.0
+ 
+-sh run.sh sh dgl/run_dgl.sh full_new.csv
++sh run.sh sleep 1s
++#sh run.sh sh dgl/run_dgl.sh full_new.csv
+ #sh run.sh sh GNN-RDM/genacc_rdm.sh 
+\ No newline at end of file
+diff --git a/slurm-4958192.out b/slurm-4958192.out
+index 1ed635f..813e5f0 100644
+--- a/slurm-4958192.out
++++ b/slurm-4958192.out
+@@ -591,3 +591,8 @@ Other Failures:
+ To github.com:JoseYan/GNNs.git
+    053a25b..6fe0c60  master -> master
+ run.sh: line 28: pushd: ../GNN_logs: No such file or directory
++[master aa42e66] Jul17-16:37:36-MDT2022
++ 1 file changed, 13 insertions(+)
++To github.com:JoseYan/GNNs.git
++   6fe0c60..aa42e66  master -> master
++run.sh: line 32: popd: directory stack empty
+diff --git a/run.sh b/run.sh
+index b63c816..a36cf5a 100644
+--- a/run.sh
++++ b/run.sh
+@@ -25,7 +25,7 @@ $cmd | tee $prog_output
+ git add .
+ git commit -m $dt
+ git push origin master
+-pushd ../GNN_logs
++pushd ../GNNs_log
+ git add .
+ git commit -m $dt
+ git push origin master
