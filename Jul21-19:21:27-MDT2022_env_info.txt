@@ -1,0 +1,374 @@
+CONDA_SHLVL=2
+LMOD_FAMILY_CUDA_VERSION=11.0
+LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/targets/x86_64-linux/lib:/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/lib64:/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/lib:/uufs/chpc.utah.edu/common/home/u1320844/local/lib:/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+CONDA_EXE=/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/bin/conda
+HOSTTYPE=x86_64-linux
+SLURM_NODEID=0
+SLURM_TASK_PID=136226
+__LMOD_REF_COUNT_PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/bin:1;/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/bin:1;/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/envs/ogb/bin:1;/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/condabin:1;/uufs/chpc.utah.edu/sys/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:2;/uufs/chpc.utah.edu/common/home/u1320844/.dotnet/tools:1
+_ModuleTable002_=YSA9IHsKZm4gPSAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlL2N1ZGEvMTEuMC5sdWEiLApmdWxsTmFtZSA9ICJjdWRhLzExLjAiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHsKYXJjaCA9IHsKZ3B1ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjdWRhLzExLjAiLAp3ViA9ICIwMDAwMDAwMTEuKnpmaW5hbCIsCn0sCmdjYyA9IHsKZm4gPSAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlL2djYy85LjIuMC5sdWEiLApmdWxsTmFtZSA9ICJnY2MvOS4yLjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwK
+SSH_CONNECTION=10.242.67.31 34432 10.242.76.94 22
+INCLUDE=/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/include
+SLURM_PRIO_PROCESS=0
+LANG=en_US.UTF-8
+SLURM_SUBMIT_DIR=/uufs/chpc.utah.edu/common/home/u1320844/GNNs
+MODULERCFILE=/uufs/chpc.utah.edu/sys/modulefiles/etc/rc_r8
+GUESTFISH_RESTORE=\e[0m
+LMOD_FAMILY_COMPILER_VERSION=9.2.0
+HOSTNAME=notch348
+CUDA_INCDIR=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/include
+LMOD_SYSTEM_DEFAULT_MODULES=chpc
+OLDPWD=/uufs/chpc.utah.edu/common/home/u1320844/GNNs/pyg
+__LMOD_REF_COUNT__LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/gcc/9.2.0.lua:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/cuda/11.0.lua:1
+SLURM_CPUS_PER_TASK=16
+ENVIRONMENT=BATCH
+__LMOD_SET_FPATH=1
+CUDA_PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2
+GUESTFISH_INIT=\e[1;34m
+CUDA_LIBDIR=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/lib64
+FPATH=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/ksh_funcs
+ROCR_VISIBLE_DEVICES=0
+CONDA_PREFIX=/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/envs/ogb
+KDEDIRS=/usr
+SLURM_PROCID=0
+SLURM_JOB_GID=4000588
+__LMOD_REF_COUNT_INCLUDE=/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/include:1
+VENDOR=unknown
+MACHTYPE=x86_64
+BASHRC_LOADED=0
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/targets/x86_64-linux/lib:1;/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/lib64:1;/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/lib:1;/uufs/chpc.utah.edu/common/home/u1320844/local/lib:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/lib:2
+LMOD_FAMILY_CUDA=cuda
+SLURMD_NODENAME=notch348
+_ModuleTable004_=OC9Db21waWxlci9nY2MvOS4yLjAiCiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL3NwYWNrL2xpbnV4LXJvY2t5OC14ODZfNjQvQ29yZS9saW51eC1yb2NreTgtbmVoYWxlbSIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9MaW51eCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlIiwgIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL2luc3RhbGxkaXIvbG1vZC84LjYtcjgvbW9kdWxlZmlsZXMvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9zcGFjay9saW51eC1yb2NreTgteDg2XzY0L0NvcmUvbGludXgt
+SLURM_TASKS_PER_NODE=3
+DOTNET_ROOT=/usr/lib64/dotnet
+S_COLORS=auto
+GFLAGS_DIR=/uufs/chpc.utah.edu/common/home/u1320844/libs/gflags/gflags-2.2.2/build/include
+_CE_M=
+which_declare=declare -f
+OSTYPE=linux
+DOTNET_BUNDLE_EXTRACT_BASE_DIR=/uufs/chpc.utah.edu/common/home/u1320844/.cache/dotnet_bundle_extract
+USER=u1320844
+SLURM_NNODES=1
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+CONDA_PREFIX_1=/uufs/chpc.utah.edu/common/home/u1320844/anaconda3
+CUDA_BINDIR=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/bin
+__LMOD_REF_COUNT_MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Compiler/cuda/11.0:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Compiler/np/gcc/9.2.0:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-centos7-x86_64/Compiler/linux-centos7-nehalem/gcc/9.2.0:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Compiler/gcc/9.2.0:1;/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:2;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:1;/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:1;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core:1
+__LMOD_REF_COUNT_LOADEDMODULES=chpc/1.0:1;gcc/9.2.0:1;cuda/11.0:1
+GROUP=sadayappan
+PWD=/uufs/chpc.utah.edu/common/home/u1320844/GNNs
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SLURM_JOB_NODELIST=notch348
+HOME=/uufs/chpc.utah.edu/common/home/u1320844
+SLURM_CLUSTER_NAME=notchpeak
+CONDA_PYTHON_EXE=/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/bin/python
+SLURM_NODELIST=notch348
+HOST=notch348
+SSH_CLIENT=10.242.67.31 34432 22
+LMOD_VERSION=8.6
+TARG_TITLE_BAR_PAREN= 
+LMOD_SETTARG_CMD=:
+KRB5CCNAME=KEYRING:persistent:1447633
+SLURM_JOB_CPUS_PER_NODE=56
+BASH_ENV=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/init/bash
+XDG_DATA_DIRS=/uufs/chpc.utah.edu/common/home/u1320844/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+SLURM_TOPOLOGY_ADDR=notch348
+OSVER=8.5
+_CE_CONDA=
+SLURM_WORKING_CLUSTER=notchpeak:10.242.67.21:6817:9216:109
+CUDA_ROOT=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2
+SLURM_JOB_NAME=batch.sh
+TMPDIR=/scratch/local/u1320844/4969815
+SLURM_JOB_GPUS=0
+LMOD_sys=Linux
+SLURM_JOBID=4969815
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpDb21waWxlciA9ICJnY2MiLApjdWRhID0gImN1ZGEiLAp9LAptVCA9IHsKY2hwYyA9IHsKZm4gPSAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9Db3JlL2NocGMvMS4wLmx1YSIsCmZ1bGxOYW1lID0gImNocGMvMS4wIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7Cmxtb2QgPSB7CnN0aWNreSA9IDEsCn0sCn0sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiY2hwYyIsCndWID0gIjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKY3Vk
+SLURM_CONF=/uufs/notchpeak.peaks/sys/var/slurm/etc/slurm.conf
+LOADEDMODULES=chpc/1.0:gcc/9.2.0:cuda/11.0
+CPUARCH=icelake
+__LMOD_REF_COUNT_MANPATH=/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/share/man:1;/uufs/notchpeak.peaks/sys/installdir/slurm/std/share/man:3;/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:1;/uufs/chpc.utah.edu/sys/man:1;/usr/local/share/man:1;/usr/share/man:1
+_ModuleTable003_=c3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYy85LjIuMCIsCndWID0gIjAwMDAwMDAwOS4wMDAwMDAwMDIuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91dWZzL2NocGMudXRhaC5lZHUvc3lzL21vZHVsZWZpbGVzL0NIUEMtcjgvQ29tcGlsZXIvY3VkYS8xMS4wIgosICIvdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0NvbXBpbGVyL25wL2djYy85LjIuMCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvc3BhY2svbGludXgtY2VudG9zNy14ODZfNjQvQ29tcGlsZXIvbGludXgtY2VudG9zNy1uZWhhbGVtL2djYy85LjIuMCIKLCAiL3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1y
+SLURM_NODE_ALIASES=(null)
+LMOD_ROOT=/uufs/chpc.utah.edu/sys/installdir/lmod
+SLURM_JOB_QOS=notchpeak-gpu-guest
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+CONDA_PROMPT_MODIFIER=(ogb) 
+SSH_TTY=/dev/pts/0
+UUFSCELL=notchpeak.peaks
+MAIL=/var/spool/mail/u1320844
+SLURM_CPUS_ON_NODE=56
+GCC_LIB=/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/lib64
+SLURM_JOB_NUM_NODES=1
+__Init_Default_Modules=1
+SLURM_MEM_PER_NODE=1020000
+REMOTEHOST=10.242.67.31
+TERM=xterm-256color
+SHELL=/bin/bash
+CUDA_ROOTDIR=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2
+_ModuleTable_Sz_=5
+SLURM_JOB_UID=1447633
+TC_LIB_DIR=/usr/lib64/tc
+SLURM_JOB_PARTITION=notchpeak-gpu-guest
+LMOD_FAMILY_COMPILER=gcc
+OSREL=Rocky
+TCSHRC_LOADED=0
+CUDA_DEVICE_ORDER=PCI_BUS_ID
+TMOUT=0
+SLURM_JOB_USER=u1320844
+CUDA_VISIBLE_DEVICES=0
+SHLVL=4
+SLURM_SUBMIT_HOST=notch348
+SLURM_JOB_ACCOUNT=owner-gpu-guest
+LMOD_SHORTTIME=86400
+MANPATH=/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/share/man:/uufs/notchpeak.peaks/sys/installdir/slurm/std/share/man:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/share/man:/uufs/chpc.utah.edu/sys/man:/usr/local/share/man:/usr/share/man
+MODULEPATH=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Compiler/cuda/11.0:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Compiler/np/gcc/9.2.0:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-centos7-x86_64/Compiler/linux-centos7-nehalem/gcc/9.2.0:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Compiler/gcc/9.2.0:/uufs/chpc.utah.edu/sys/modulefiles/spack/linux-rocky8-x86_64/Core/linux-rocky8-nehalem:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Linux:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core:/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/modulefiles/Core
+SLURM_GTIDS=0
+LOGNAME=u1320844
+GFLAGS_LIBRARY=/uufs/chpc.utah.edu/common/home/u1320844/libs/gflags/gflags-2.2.2/build/lib
+MODULEPATH_ROOT=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8
+PATH=/uufs/chpc.utah.edu/sys/installdir/cuda/11.0.2/bin:/uufs/chpc.utah.edu/sys/installdir/gcc/9.2.0/bin:/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/envs/ogb/bin:/uufs/chpc.utah.edu/common/home/u1320844/anaconda3/condabin:/uufs/chpc.utah.edu/sys/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/uufs/notchpeak.peaks/sys/installdir/slurm/std/bin:/uufs/chpc.utah.edu/common/home/u1320844/.dotnet/tools
+SLURM_JOB_ID=4969815
+_LMFILES_=/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/chpc/1.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/gcc/9.2.0.lua:/uufs/chpc.utah.edu/sys/modulefiles/CHPC-r8/Core/cuda/11.0.lua
+GUESTFISH_OUTPUT=\e[0m
+MODULESHOME=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8
+CONDA_DEFAULT_ENV=ogb
+LMOD_SETTARG_FULL_SUPPORT=no
+LMOD_PKG=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8
+_ModuleTable005_=cm9ja3k4LW5laGFsZW06L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvbW9kdWxlZmlsZXMvQ0hQQy1yOC9MaW51eDovdXVmcy9jaHBjLnV0YWguZWR1L3N5cy9tb2R1bGVmaWxlcy9DSFBDLXI4L0NvcmU6L3V1ZnMvY2hwYy51dGFoLmVkdS9zeXMvaW5zdGFsbGRpci9sbW9kLzguNi1yOC9tb2R1bGVmaWxlcy9Db3JlIiwKfQo=
+LMOD_CMD=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/libexec/lmod
+SLURM_LOCALID=0
+CVS_RSH=ssh
+GPU_DEVICE_ORDINAL=0
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LMOD_DIR=/uufs/chpc.utah.edu/sys/installdir/lmod/8.6-r8/libexec
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot "$@"
+}
+BASH_FUNC_module%%=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+BASH_FUNC_ml%%=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+_=/usr/bin/env
+Package                       Version               Location
+----------------------------- --------------------- ---------------------------------------------------------------
+absl-py                       1.0.0
+aiohttp                       3.7.4.post0
+alabaster                     0.7.12
+alembic                       1.7.5
+aqtp                          0.0.7
+astunparse                    1.6.3
+async-timeout                 3.0.1
+attrs                         21.2.0
+autopage                      0.4.0
+autopep8                      1.6.0
+Babel                         2.10.3
+backports.functools-lru-cache 1.6.4
+bidict                        0.22.0
+bio                           1.3.9
+biopython                     1.79
+biothings-client              0.2.6
+cached-property               1.5.2
+cachetools                    4.2.4
+certifi                       2022.6.15
+cfgv                          3.3.1
+chardet                       4.0.0
+charset-normalizer            2.0.7
+chex                          0.1.3
+click                         8.0.3
+cliff                         3.10.0
+cloudpickle                   2.1.0
+clu                           0.0.7
+cmaes                         0.8.2
+cmd2                          2.3.3
+cogdl                         0.5.2
+colorlog                      6.6.0
+contextlib2                   21.6.0
+cycler                        0.11.0
+Cython                        0.29.28
+dacite                        1.6.0
+decorator                     5.1.1
+dgl                           0.8
+dgl-cu110                     0.8.2.post1
+dglgo                         0.0.1
+dill                          0.3.5.1
+distlib                       0.3.4
+dm-tree                       0.1.7
+docutils                      0.18.1
+einops                        0.4.1
+etils                         0.5.1
+fast-sampler                  0.0.0
+filelock                      3.4.2
+flake8                        4.0.1
+flatbuffers                   1.12
+flax                          0.4.1
+flaxformer                    0.4.2
+fonttools                     4.28.5
+fsspec                        2021.10.1
+future                        0.18.2
+gast                          0.4.0
+gensim                        3.8.3
+google-auth                   2.3.2
+google-auth-oauthlib          0.4.6
+google-pasta                  0.2.0
+googleapis-common-protos      1.56.2
+googledrivedownloader         0.4
+graphviz                      0.17
+grave                         0.0.3
+greenlet                      1.1.2
+grpcio                        1.41.1
+h5py                          2.9.0
+huggingface-hub               0.2.1
+identify                      2.4.1
+idna                          3.3
+igraph                        0.9.10
+imagesize                     1.4.1
+importlib-metadata            4.12.0
+importlib-resources           5.4.0
+iniconfig                     1.1.1
+isodate                       0.6.0
+isort                         5.10.1
+jax                           0.3.4
+jaxlib                        0.3.2+cuda11.cudnn82
+Jinja2                        3.0.2
+joblib                        1.1.0
+keras                         2.9.0
+keras-nightly                 2.10.0.dev2022052607
+Keras-Preprocessing           1.1.2
+kiwisolver                    1.3.2
+libclang                      14.0.1
+littleutils                   0.2.2
+llvmlite                      0.37.0
+Mako                          1.1.6
+Markdown                      3.3.4
+MarkupSafe                    2.0.1
+matplotlib                    3.5.1
+mccabe                        0.6.1
+ml-collections                0.1.0
+msgpack                       1.0.3
+multidict                     5.2.0
+munkres                       1.1.4
+mygene                        3.2.2
+networkx                      2.6.3
+ninja                         1.10.2.3
+nodeenv                       1.6.0
+nose                          1.3.7
+numba                         0.54.1
+numpy                         1.20.3
+numpydoc                      1.4.0
+oauthlib                      3.1.1
+ogb                           1.3.2
+opencv-python                 4.5.5.64
+opt-einsum                    3.3.0
+optax                         0.1.2
+optuna                        2.4.0
+outdated                      0.2.1
+packaging                     21.2
+pandas                        1.3.4
+pbr                           5.8.0
+Pillow                        8.4.0
+pip                           21.2.2
+platformdirs                  2.4.1
+pluggy                        1.0.0
+pre-commit                    2.16.0
+prettytable                   3.3.0
+promise                       2.3
+protobuf                      3.19.1
+psutil                        5.9.0
+py                            1.11.0
+pyasn1                        0.4.8
+pyasn1-modules                0.2.8
+pycodestyle                   2.8.0
+pydantic                      1.9.1
+pyDeprecate                   0.3.1
+pyflakes                      2.4.0
+Pygments                      2.12.0
+PyMetis                       2020.1
+pyparsing                     2.4.7
+pyperclip                     1.8.2
+pytest                        7.1.2
+python-dateutil               2.8.2
+pytorch-lightning             1.4.9
+pytz                          2021.3
+PyYAML                        6.0
+ragdoll                       0.1
+rdflib                        6.0.2
+regex                         2021.11.10
+requests                      2.26.0
+requests-oauthlib             1.3.0
+rsa                           4.7.2
+ruamel.yaml                   0.17.21
+ruamel.yaml.clib              0.2.6
+sacremoses                    0.0.46
+scikit-learn                  1.0
+scipy                         1.7.1
+seaborn                       0.11.2
+sentencepiece                 0.1.96
+setuptools                    58.0.4
+six                           1.16.0
+sklearn                       0.0
+smart-open                    5.2.1
+snowballstemmer               2.2.0
+sparse-coo-tensor-cpp         0.0.0
+Sphinx                        5.0.2
+sphinxcontrib-applehelp       1.0.2
+sphinxcontrib-devhelp         1.0.2
+sphinxcontrib-htmlhelp        2.0.0
+sphinxcontrib-jsmath          1.0.1
+sphinxcontrib-qthelp          1.0.3
+sphinxcontrib-serializinghtml 1.1.5
+SQLAlchemy                    1.4.29
+ssgetpy                       1.0rc2
+stevedore                     3.5.0
+tabulate                      0.8.9
+tb-nightly                    2.10.0a20220527
+tednet                        0.1.3
+tensorboard                   2.9.0
+tensorboard-data-server       0.6.1
+tensorboard-plugin-wit        1.8.0
+tensorflow                    2.9.1
+tensorflow-cpu                2.9.1
+tensorflow-datasets           4.5.2
+tensorflow-estimator          2.9.0
+tensorflow-hub                0.12.0
+tensorflow-io-gcs-filesystem  0.26.0
+tensorflow-metadata           1.8.0
+tensorflow-probability        0.16.0
+tensorflow-text               2.9.0
+tensorly-torch                0.3.0                 /uufs/chpc.utah.edu/common/home/u1320844/defonet/tensorly/torch
+termcolor                     1.1.0
+texttable                     1.6.4
+tf-estimator-nightly          2.10.0.dev2022052708
+tf-nightly                    2.10.0.dev20220527
+tfds-nightly                  4.5.2.dev202205280044
+threadpoolctl                 3.0.0
+tokenizers                    0.10.3
+toml                          0.10.2
+tomli                         2.0.1
+toolz                         0.11.2
+torch                         1.9.1+cu111
+torch-cluster                 1.5.9
+torch-geometric               2.0.1
+torch-scatter                 2.0.8
+torch-sparse                  0.6.12
+torchmetrics                  0.6.0
+torchstat                     0.0.7
+torchvision                   0.10.1
+torchviz                      0.0.2
+tqdm                          4.62.3
+transformers                  4.15.0
+typer                         0.4.2
+typing_extensions             4.3.0
+ujson                         4.2.0
+umap                          0.1.1
+urllib3                       1.26.7
+virtualenv                    20.12.0
+vit-pytorch                   0.35.2
+wcwidth                       0.2.5
+Werkzeug                      2.0.2
+wheel                         0.37.0
+wrapt                         1.14.1
+yacs                          0.1.8
+yarl                          1.7.0
+zipp                          3.8.0
+python pyg/inf_sampling.py ogbn-papers100M
