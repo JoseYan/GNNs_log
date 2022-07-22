@@ -1,0 +1,19 @@
+commit 868c3a71efd461cfddad8e5d65304e12b5481ccb
+Author: jhyan <jhyan@cs.utah.edu>
+Date:   Fri Jul 22 00:21:28 2022 -0600
+
+    Jul21-23:56:15-MDT2022
+
+diff --git a/pyg/inf_sampling.py b/pyg/inf_sampling.py
+index 900a457..bd70d42 100644
+--- a/pyg/inf_sampling.py
++++ b/pyg/inf_sampling.py
+@@ -169,7 +169,7 @@ def train(epoch):
+ 
+         optimizer.zero_grad()
+         out = model(x[n_id], adjs)
+-        loss = F.nll_loss(out, y[n_id[:batch_size]])
++        loss = F.nll_loss(out, y[n_id[:batch_size]].long())
+         loss.backward()
+         optimizer.step()
+ 
